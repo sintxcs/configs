@@ -1,15 +1,14 @@
 import pathlib
 from setuptools import setup
-from setuptools import find_packages
 
-PACKAGE = "configs"
+DISTRIBUTION_NAME = "configs"
 THIS_DIR = pathlib.Path(__file__).parent
 LONG_DESCRIPTION = (THIS_DIR / "README.md").read_text()
 
 setup(
-    name=PACKAGE,
-    version='0.0.2',
-    description="sinontop configuration only.",
+    name=DISTRIBUTION_NAME, # This is what people pip install
+    version='0.1.0',
+    description="A collection of sinontop utilities and configurations.",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
     author="Sintacs Ao",
@@ -17,7 +16,7 @@ setup(
     license="MIT",
     url="https://t.me/sinontop",
     zip_safe=False,
-    project_urls={"GitHub": "https://github.com/sintxcs"},
+    project_urls={"GitHub": "https://github.com/sintxcs/configs"},
     packages=find_packages(),
     classifiers=[
         'Development Status :: 5 - Production/Stable',
@@ -26,6 +25,4 @@ setup(
         'License :: MIT License',
         'Programming Language :: Python :: 3'
     ],
-    #setup_requires=["wheel"],
-    #python_requires='>=3.7'
 )
