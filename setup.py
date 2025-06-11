@@ -6,7 +6,7 @@ THIS_DIR = pathlib.Path(__file__).parent
 LONG_DESCRIPTION = (THIS_DIR / "README.md").read_text()
 
 setup(
-    name=DISTRIBUTION_NAME, # This is what people pip install
+    name=DISTRIBUTION_NAME,
     version='0.1.0',
     description="A collection of sinontop utilities and configurations.",
     long_description=LONG_DESCRIPTION,
