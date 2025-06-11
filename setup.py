@@ -1,5 +1,5 @@
 import pathlib
-from setuptools import setup
+from setuptools import setup, find_packages
 
 DISTRIBUTION_NAME = "configs"
 THIS_DIR = pathlib.Path(__file__).parent
