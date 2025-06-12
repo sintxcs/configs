@@ -7,7 +7,7 @@ LONG_DESCRIPTION = (THIS_DIR / "README.md").read_text()
 
 setup(
     name=DISTRIBUTION_NAME,
-    version='0.1.1',
+    version='0.1.2',
     description="A collection of sinontop utilities and configurations.",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
